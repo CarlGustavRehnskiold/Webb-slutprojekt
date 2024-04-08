@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+header {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
+}
+#MainHeading {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+#MainContainer {
+  background-color: red;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: red;
+}
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
