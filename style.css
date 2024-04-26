@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   margin: 0;
   background-color: white;
@@ -22,7 +21,6 @@ header {
 #MainContainer {
   background-color: red;
 }
-
 .nav {
   background-color: red;
   border-bottom: 10px solid;
@@ -46,7 +44,6 @@ a:visited {
   text-decoration: underline;
   text-decoration-thickness: 5px;
 }
-
 li a:hover,
 a:active {
   background-color: rgb(210, 9, 9);
@@ -55,25 +52,28 @@ a:active {
   font-size-adjust: 100px;
   border-radius: 5px;
 }
-.NewsArticles-StyleScrollHorizontal {
+#NewsArticles-StyleScrollHorizontal {
   background-color: red;
   color: white;
   display: flex;
   overflow-x: scroll;
   white-space: normal;
 }
-.NewsArticles-StyleScrollHorizontal::-webkit-scrollbar {
+
+#NewsArticles-StyleScrollHorizontal::-webkit-scrollbar {
   display: none;
 }
+
 .News-Article-StyleScroll {
   display: flex;
-  height: 15vw;
   border-left: 5px solid white;
   border-right: 5px solid white;
   padding-left: 2vw;
   padding-right: 2vw;
   justify-content: center;
+  width: 20vw;
 }
+
 .Container-Coloumn {
   display: flex;
   flex-direction: wrap;
@@ -91,7 +91,6 @@ a:active {
 .News-Article {
   display: flex;
 }
-
 .AdsContainer {
   background-color: red;
   display: flex;
