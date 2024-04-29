@@ -21,7 +21,7 @@ function displayData(data) {
     for (let i = 0; i < data.results.length; i++) {
         let articleDiv = document.createElement("div");
         articleDiv.innerHTML = data.results[index].title;
-        articleDiv.classList.add("News-Article-StyleScroll");
+        articleDiv.classList.add("News-Article-Scroll");
         newsContainer.appendChild(articleDiv);
         index++;
     }

@@ -8,19 +8,24 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
-header {
-  background-color: white;
-}
+
 #MainHeading {
-  border-top: 10px solid;
-  display: flex;
-  justify-content: center;
   color: white;
-  border-bottom: 3px solid;
 }
 #MainContainer {
   background-color: red;
+  display: flex;
+  border-top: 10px solid white;
+  border-bottom: 3px solid white;
+  justify-content: space-evenly;
+  height: 5vw;
 }
+
+#SearchInput {
+  height: 10px;
+  display: flex;
+}
+
 .nav {
   background-color: red;
   border-bottom: 10px solid;
@@ -52,6 +57,14 @@ a:active {
   font-size-adjust: 100px;
   border-radius: 5px;
 }
+.SideHeading {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  border-bottom: 5px solid white;
+}
+
 #NewsArticles-StyleScrollHorizontal {
   background-color: red;
   color: white;
@@ -64,14 +77,16 @@ a:active {
   display: none;
 }
 
-.News-Article-StyleScroll {
+.News-Article-Scroll {
   display: flex;
   border-left: 5px solid white;
   border-right: 5px solid white;
   padding-left: 2vw;
   padding-right: 2vw;
+  min-height: 10vw;
+  max-height: 15vw;
+  min-width: 15vw;
   justify-content: center;
-  width: 20vw;
 }
 
 .Container-Coloumn {
