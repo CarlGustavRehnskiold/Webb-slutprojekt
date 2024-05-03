@@ -22,7 +22,7 @@ body {
 }
 
 #SearchInput {
-  height: 10px;
+  height: 30%;
   display: flex;
 }
 

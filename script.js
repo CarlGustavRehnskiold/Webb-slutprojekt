@@ -1,6 +1,5 @@
 let apiKey = "pub_40262c128bb3476afb761921e8f4c9224c6a5"
-let searchString = "sweden"
-var url = `https://newsdata.io/api/1/news?apikey=${apiKey}&q=${searchString}`;
+var url = `https://newsdata.io/api/1/news?apikey=${apiKey}&q=war`;
 let newsContainer = document.getElementById("NewsArticles-StyleScrollHorizontal");
 
 async function fetchData() {
@@ -8,7 +7,7 @@ async function fetchData() {
     let json = await data.json();
     return json;
 }
-
+// när fönstret laddas
 window.onload = async function() {
     const data = await fetchData();
     console.log(data);
