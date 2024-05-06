@@ -89,7 +89,7 @@ a:active {
   justify-content: center;
 }
 
-.Container-Coloumn {
+#Container-Coloumn {
   display: flex;
   flex-direction: wrap;
 }
