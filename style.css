@@ -78,7 +78,6 @@ a:active {
 }
 
 .News-Article-Scroll {
-  display: flex;
   border-left: 5px solid white;
   border-right: 5px solid white;
   padding-left: 2vw;
@@ -88,7 +87,10 @@ a:active {
   min-width: 15vw;
   justify-content: center;
 }
-
+.News-Article-Scroll img {
+  max-width: 100%; /* Ensure images don't exceed the width of their container */
+  height: auto; /* Maintain aspect ratio */
+}
 #Container-Coloumn {
   display: flex;
   flex-direction: wrap;
