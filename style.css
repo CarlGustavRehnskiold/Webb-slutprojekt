@@ -65,12 +65,13 @@ a:active {
   border-bottom: 5px solid white;
 }
 
-#NewsArticles-StyleScrollHorizontal {
+.NewsArticles-StyleScrollHorizontal {
   background-color: red;
   color: white;
   display: flex;
   overflow-x: scroll;
   white-space: normal;
+  overflow-y: hidden;
 }
 
 #NewsArticles-StyleScrollHorizontal::-webkit-scrollbar {
@@ -88,26 +89,38 @@ a:active {
   justify-content: center;
 }
 .News-Article-Scroll img {
-  max-width: 100%; /* Ensure images don't exceed the width of their container */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
 }
-#Container-Coloumn {
+.Container-Coloumn {
   display: flex;
   flex-direction: wrap;
 }
-.NewsArticles-StyleColoumn {
-  background-color: red;
-  color: white;
+.Container-Articles {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  flex-direction: column; 
   width: 100%;
-  border: 5px solid;
+  align-items: center;
+  border-left: 5% solid;
+  border-right: 5% solid;
+  border-bottom: 5% solid;
+  border-color: white;
 }
-.News-Article {
-  display: flex;
+
+.news-article {
+  display:flex;
+  background-color: red;
+  min-height: 10vw;
+  max-height: 15vw;
+  width: 100%;
+  justify-content: center;
+  color: white;
+  border-bottom: 5px solid;
+  border-color: white;
 }
+.news-article img {
+  max-width: 50%;
+}
+
 .AdsContainer {
   background-color: red;
   display: flex;
@@ -121,3 +134,4 @@ a:active {
 .Ads {
   color: white;
 }
+
