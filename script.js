@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+  
+    hamburger.addEventListener('click', function () {
+      navLinks.classList.toggle('show');
+    });
+  });
+      
 // let apiKey = "5addb6294bc045f6aefdfc95ac2af42c";
 // containerColoumn = document.getElementById("Container-Coloumn");
 
