@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,17 +9,40 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
+.martel-sans-extralight {
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
 
 #MainHeading {
   color: white;
+  font-size: 2.5em;
+  margin: auto 20px;
 }
+
 #MainContainer {
   background-color: red;
   display: flex;
-  border-top: 10px solid white;
-  border-bottom: 3px solid white;
-  justify-content: space-evenly;
-  height: 5vw;
+  align-items: center;
+  border-width: 10px 0 3px 0;
+  border-style: solid;
+  border-color: white;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: auto;
+}
+
+#MainContainer img {
+  height: 100%;
+  max-height: 80px;
+}
+
+#SearchInput {
+  flex-grow: 1;
+  margin: 10 10px;
+  padding: 5px;
+  font-size: 1em;
 }
 
 .nav {
@@ -27,7 +51,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 4px;
 }
 
 .nav-links {
@@ -36,16 +60,10 @@ body {
   padding: 0;
 }
 
-/* Specific styles for header nav-links */
 .nav-links {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-}
-
-/* Specific styles for footer nav-links (if needed) */
-.footer-nav-links, .contact-nav-links {
-  /* Any specific styles for footer navigation */
 }
 
 .nav-links li {
@@ -75,6 +93,15 @@ body {
   display: none;
   cursor: pointer;
 }
+.hero-image {
+  background-image: url("../LogoAndBackgroundPicture/News journalsim.png ");
+
+  height: 50vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 .SideHeading {
   display: flex;
@@ -98,14 +125,13 @@ body {
 }
 
 .News-Article-Scroll {
-  border-left: 5px solid white;
-  border-right: 5px solid white;
+  border-right: 10px solid white;
   padding: 0 2vw;
   min-width: 15vw;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 
 .News-Article-Scroll img {
@@ -134,39 +160,36 @@ body {
   background-color: red;
   display: flex;
   justify-content: center;
-  border-top: 10px solid;
-  border-left: 30px solid;
-  border-right: 30px solid;
-  border-bottom: 10px solid;
-  border-color: white;
+  border: 10px solid white;
+  border-width: 10px 30px;
 }
-.ad-picture{
+.ad-picture {
   width: 50%;
   border-radius: 5%;
 }
-footer{
+footer {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   background-color: red;
   color: white;
 }
-.about-container{
+.about-container {
   background-color: rgb(255, 60, 0);
-  padding: 10px; 
+  padding: 10px;
 }
-.contact-container{
+.contact-container {
   background-color: rgb(245, 102, 58);
-  padding: 10px; 
+  padding: 10px;
 }
-.links-container{
+.links-container {
   background-color: rgb(246, 106, 106);
-  padding: 10px; 
+  padding: 10px;
 }
 
 /* Laptop/Desktop styles */
 @media (min-width: 1024px) {
   .news-article {
-    flex: 1 1 calc(33.333% - 20px); 
+    flex: 1 1 calc(33.333% - 20px);
     margin: 10px;
   }
   .News-Article-Scroll {
@@ -178,7 +201,7 @@ footer{
 /* Tablet styles */
 @media (min-width: 768px) and (max-width: 1023px) {
   .news-article {
-    flex: 1 1 calc(50% - 20px); 
+    flex: 1 1 calc(50% - 20px);
     margin: 10px;
   }
   .News-Article-Scroll {
@@ -190,13 +213,13 @@ footer{
 /* Mobile styles */
 @media (max-width: 767px) {
   .news-article {
-    flex: 1 1 calc(100% - 20px); 
+    flex: 1 1 calc(100% - 20px);
     margin: 10px;
   }
   .News-Article-Scroll {
-    min-width: 40vw; 
+    min-width: 40vw;
     max-height: 40vw;
-  } 
+  }
   .nav {
     flex-direction: wrap;
     align-items: flex-start;
@@ -214,6 +237,37 @@ footer{
   }
 
   .hamburger-menu {
-    display: block; 
+    display: block;
   }
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
