@@ -32,11 +32,20 @@ body {
 
 .nav-links {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Specific styles for header nav-links */
+.nav-links {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 0;
-  padding: 0;
+}
+
+/* Specific styles for footer nav-links (if needed) */
+.footer-nav-links, .contact-nav-links {
+  /* Any specific styles for footer navigation */
 }
 
 .nav-links li {
@@ -185,24 +194,23 @@ footer{
     margin: 10px;
   }
   .News-Article-Scroll {
-    min-width: 50vw; 
-    max-height: 50vw;
+    min-width: 40vw; 
+    max-height: 40vw;
   } 
   .nav {
-    flex-direction: column;
+    flex-direction: wrap;
     align-items: flex-start;
   }
 
-  .nav-links {
-    flex-direction: row;
-    width: 100%;
-    display: none; 
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  .header-nav-links {
+    display: none;
+    flex-direction: column;
   }
-
-  .nav-links.show {
-    display: flex; 
+  .header-nav-links.show {
+    display: flex;
+  }
+  .hamburger-menu {
+    display: block;
   }
 
   .hamburger-menu {

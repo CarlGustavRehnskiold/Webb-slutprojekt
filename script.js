@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger-menu');
-    const navLinks = document.querySelector('.nav-links');
+  const hamburger = document.querySelector('.hamburger-menu');
+  const headerlinks = document.querySelector('.header-nav-links');
   
-    hamburger.addEventListener('click', function () {
-      navLinks.classList.toggle('show');
-    });
+  hamburger.addEventListener('click', function () {
+    headerlinks.classList.toggle('show');
   });
+});
+
       
 // let apiKey = "5addb6294bc045f6aefdfc95ac2af42c";
 // containerColoumn = document.getElementById("Container-Coloumn");
