@@ -80,6 +80,7 @@ body {
   display: inline-block;
   text-decoration: underline;
   text-decoration-thickness: 5px;
+  transform: scale(1.1);
 }
 
 .nav-links li a:hover,
@@ -96,7 +97,6 @@ body {
 }
 .hero-image {
   background-image: url("../LogoAndBackgroundPicture/News journalsim.png ");
-
   height: 50vw;
   background-position: center;
   background-repeat: no-repeat;
